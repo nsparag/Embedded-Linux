@@ -226,9 +226,7 @@ The kernel is **configured and built specifically for the target board**.
   - Addresses, interrupts, GPIO mappings
   - Connection between devices and drivers
 
-The device tree tells the kernel: > “This hardware exists, at this address, wired this way”
-
-No device tree → no usable hardware.
+  The device tree tells the kernel: > “This hardware exists, at this address, wired this way”. No device tree → no usable hardware.
 
 **Porting Linux does NOT mean writing Linux.** Linux already exists.
 Porting Linux means:
