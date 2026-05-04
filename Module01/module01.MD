@@ -95,3 +95,79 @@ Linux enforces strict separation:
 BBB example:
 * User app cannot toggle GPIO directly
 * LED toggling must go via kernel
+
+
+## Why Device Drivers Exist
+* Applications cannot touch hardware
+* Drivers mediate access
+* Drivers hide hardware details
+
+Drivers provide:
+* Safety
+* Portability
+* Uniform access
+
+Same user program:
+* Runs on different boards
+* Uses different drivers underneath
+
+`This abstraction is why Linux scales across products.`
+
+## Execution Flow Example (LED Control)
+
+````
+User Application
+→ System Call
+→ Kernel
+→ LED Driver
+→ GPIO Hardware
+→ LED ON
+````
+
+## Root File System (RootFS)
+
+- Provides the **userspace environment**
+- Contains **programs, libraries, and configuration files**
+- **Mounted by the kernel during system boot**
+
+The Linux kernel **alone cannot run applications**.  
+It only manages:
+- CPU scheduling
+- Memory
+- Devices
+- System calls
+
+To execute any user-level program, the kernel **requires a Root File System (RootFS)**.
+
+
+**What RootFS Supplies**
+The RootFS provides all essential user‑space components, including:
+
+- `/bin`, `/sbin`  
+  Core system executables and administrative utilities
+
+- `/lib`  
+  Shared libraries required by executables at runtime
+
+- `/dev`  
+  Device nodes that act as interfaces to hardware
+
+- `/proc`  
+  Virtual filesystem exposing process and kernel information
+
+- `/sys`  
+  Interface to the kernel device model and drivers
+
+These directories together enable applications to **start, execute, and interact with hardware**.
+
+
+- **BeagleBone Black (BBB) Debian Image**  
+  A full‑featured RootFS intended for development and general use
+
+- **Embedded Products**  
+  Typically use a **much smaller, custom RootFS**, containing:
+  - Only required binaries
+  - Only necessary libraries
+  - No unused utilities or drivers
+
+This customization helps reduce system size, boot time, and complexity.
