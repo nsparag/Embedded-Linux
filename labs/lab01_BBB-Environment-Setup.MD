@@ -1,4 +1,5 @@
-# Lab‑1: BeagleBone Black Development Environment Setup (Serial + Kernel + Headers + Toolchain Sanity)
+# Lab‑1: BeagleBone Black Development Environment Setup
+*Serial + Kernel + Headers + Toolchain Sanity*
 
 ## Why this lab exists (read this first)
 Before we touch cross‑compilation, kernel modules, or drivers, we must **trust the environment**. Most “kernel module failed” or “driver not loading” issues later are not code problems — they are **mismatched kernel/headers**, **wrong console setup**, or **wrong assumptions about the board image**.
