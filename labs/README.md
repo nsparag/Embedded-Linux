@@ -1,5 +1,5 @@
 # LABS (Phase‑2) — Master Index & Navigation
-## Embedded Linux and Programming (BeagleBone Black / TI AM335x)
+## Embedded Linux (BeagleBone Black / TI AM335x)
 
 This folder contains the **complete hands‑on lab sequence** for Embedded Linux. Labs are designed to progress from **user space → kernel modules → device tree → character driver → debugging**, with **serial console** as the always‑available safety net.
 
