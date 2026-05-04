@@ -29,10 +29,12 @@ For BeagleBone Black:
 | Software Control          | User decides software installation     | End user never modifies OS         |
 
 
+
 | Example Device     | Behavior Description                                  |
 |--------------------|-------------------------------------------------------|
 | Laptop             | User installs printer driver as needed                |
 | Washing Machine    | OS never changes in the field after deployment        |
+
 
 Embedded Linux: 
 
@@ -60,13 +62,14 @@ RTOS limitations:
 
 ## BeagleBone Black as Reference Platform
 
-• TI AM335x SoC
-• ARM Cortex‑A8 CPU
-• DDR controller
-• GPIO, UART, I2C, SPI
-• On‑chip Boot ROM
-• Industrial‑class architecture
-• Representative embedded platform
+
+* TI AM335x SoC
+* ARM Cortex‑A8 CPU
+* DDR controller
+* GPIO, UART, I2C, SPI
+* On‑chip Boot ROM
+* Industrial‑class architecture
+* Representative embedded platform
 
 Learning BBB prepares engineers for real products, not demos.
 
