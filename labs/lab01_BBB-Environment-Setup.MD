@@ -50,6 +50,15 @@ Create a folder on host and save outputs:
 
 ***
 
+NOTE:
+This lab does NOT assume any specific Linux image
+(Debian, Yocto, or minimal).
+
+The objective is to IDENTIFY and UNDERSTAND
+what is currently running on the BeagleBone Black,
+not to change it.
+
+
 ## Step‑by‑Step Procedure
 
 ***
