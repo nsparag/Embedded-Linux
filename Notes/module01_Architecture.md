@@ -20,9 +20,9 @@ Embedded Linux is **not** a Linux distribution like Ubuntu or Fedora.
 
 Instead, Embedded Linux is:
 
--✅ A **custom‑built Linux system**  
--✅ Tailored for **one specific hardware board**  
--✅ Designed to run **one dedicated product**
+  ✅ A **custom‑built Linux system**  
+  ✅ Tailored for **one specific hardware board**  
+  ✅ Designed to run **one dedicated product**
 
 For BeagleBone Black:
 - **Hardware** → TI AM335x SoC
@@ -288,5 +288,3 @@ Includes:
 - BSP binds Linux to the board
 
 ---
-
-Say **“Proceed with Module‑2”** when ready.
