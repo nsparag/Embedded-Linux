@@ -206,10 +206,10 @@ All this knowledge is provided by the **BSP**.
   - Clock and pin multiplexing
   - Loading kernel and device tree into memory
 
-Examples:
-- U‑Boot board files
-- Environment variables
-- Boot scripts
+  Examples:
+  - U‑Boot board files
+  - Environment variables
+  - Boot scripts
 
 
 - Kernel Configuration
